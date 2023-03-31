@@ -1,0 +1,41 @@
+.btn-wrapper{
+    padding: 0 vaR(--btn-padding);
+    text-align: center;
+    min-width: var(--btn-min-width);
+}
+
+.divide{
+    content: '';
+    height: 24px;
+    width:1px;
+    align-self: center;
+    background-color: var(--border-wrapper);
+}
+
+.search-btn{
+    background-color: var(--primary-color);
+    height: 32px;
+    width: 32px;
+
+
+    display: flex;
+    // text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+
+    margin: 7px 7px 7px 0;
+
+    font-size: 0.9rem;
+    font-weight: bold;
+    color:var(--white-color);
+
+    svg {
+        stroke: currentcolor;
+        fill: currentcolor;
+        stroke-width: 22px;
+        height: 1em;
+        width: 1em;
+    }
+
+}

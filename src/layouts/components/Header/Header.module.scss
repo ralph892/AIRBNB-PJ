@@ -1,0 +1,121 @@
+.wrapper{
+    width:100%;
+    height:var(--header-height);
+    padding: 0 40px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+
+    font-family: Circular-medium;
+    font-size: 1.4rem;
+    font-style: bold;
+
+    &::after{
+        content: '';
+        display: flex;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--line-color);
+        height: 1px;
+    }
+}
+
+.logo-wrapper{
+    display: flex;
+    align-items: center;
+    height:100%;
+    flex-grow: 2;
+    //250px is the length difference between logo-wrapper and actions-wrapper
+    flex: 2 0 254px;
+    // minus the height of <Link> 
+    transform: translateY(3px);
+}
+
+.logo-page{
+    width:102px;
+    height:32px;
+    object-fit: contain;
+}
+
+.filter-wrapper,.actions-accounts{
+    background-color: var(--white-color);
+    border: 1px solid var(--border-wrapper);
+    border-radius: 40px;
+    height: 48px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);
+
+    display: flex;
+    align-items: center;
+
+    &:hover{
+        box-shadow: 0 2px 4px rgba(0,0,0,0.18);
+    }
+}
+
+.filter-container{
+    flex-grow: 1;
+    position: relative;  
+}
+
+.filter-wrapper{
+    margin: 0 24px;
+}
+
+.active-filter-wrapper{
+    background-color: var(--white-color);
+    border:1 px solid transparent;
+    font-size: 16px;
+    height: 48px;
+    min-width: 348px;
+    font-family: Circular-light !important;
+
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+
+}
+
+.actions-accounts{
+    border-radius: 21px;
+    height: 42px;
+}
+
+.actions-wrapper{
+    display: flex;
+    flex-grow: 2;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icon-actions{
+    width:46px;
+    padding: 0px !important;
+    margin: 0 8px 0 -5px !important;
+    font-size: 16px !important;
+}
+
+.avatar-wrapper{
+    padding: 5px 5px 5px 12px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg{
+        width: 1rem;
+        height: 1rem;
+        stroke-width: 0.8px;
+    }
+}
+
+.user-avatar{
+    width: 30px;
+    height: 30px;
+    margin-left: 12px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
